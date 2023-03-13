@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "f07dffb9-5345-451c-9d89-2b7b348419fb",
+		"name": "Producs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9503571"
+	},
+	"item": [
+		{
+			"name": "list a product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Knex",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/tegar/Pictures/knex-logo.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view a product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/products/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a  product",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "mysql",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/tegar/Pictures/logo-mysql-170x115.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/products/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a  product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/products/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
